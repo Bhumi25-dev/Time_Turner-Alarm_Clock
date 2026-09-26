@@ -23,9 +23,5 @@ class RingingActivity: ComponentActivity() {
             )
         }
 
-        setContent
-        {
-
-        }
     }
 }
