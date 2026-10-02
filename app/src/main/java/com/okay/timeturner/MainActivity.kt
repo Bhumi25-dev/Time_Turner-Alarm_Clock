@@ -13,7 +13,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.okay.timeturner.test.TestAlarmButton
 import com.okay.timeturner.ui.theme.TimeTurnerTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,7 +23,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             TimeTurnerTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    TestAlarmButton(modifier = Modifier.padding(innerPadding))
+                    TimeTurnerApp()
                 }
             }
         }
