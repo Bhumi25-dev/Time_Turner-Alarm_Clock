@@ -10,7 +10,8 @@ import androidx.annotation.RequiresPermission
 import com.okay.timeturner.data.local.AlarmItem
 import com.okay.timeturner.receiver.AlarmReceiver
 import dagger.hilt.android.qualifiers.ApplicationContext
-import jakarta.inject.Inject
+import javax.inject.Inject
+
 
 class AlarmSchedulerImpl @Inject constructor(
     @ApplicationContext private val context: Context

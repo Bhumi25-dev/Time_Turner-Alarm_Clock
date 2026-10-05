@@ -3,8 +3,11 @@ package com.okay.timeturner.data.repo
 import com.okay.timeturner.data.local.AlarmDao
 import com.okay.timeturner.data.local.AlarmItem
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class AlarmRepo(
+@Singleton
+class AlarmRepo @Inject constructor(
     private val alarmDao : AlarmDao
 ) {
 
